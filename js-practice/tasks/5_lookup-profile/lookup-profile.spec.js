@@ -1,6 +1,6 @@
-// import { lookupProfile } from './lookup-profile';
+import { lookupProfile } from './lookup-profile';
 
-describe.skip('lookupProfile', () => {
+describe('lookupProfile', () => {
   it('lookupProfiles("Kristian", "lastName") should return "Vos"', () => {
     expect(lookupProfile('Kristian', 'lastName')).toBe('Vos');
   });

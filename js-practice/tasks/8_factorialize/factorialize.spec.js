@@ -1,6 +1,6 @@
-// import { factorialize } from './factorialize';
+import { factorialize } from './factorialize';
 
-describe.skip('factorialize', () => {
+describe('factorialize', () => {
   it('should return a number', () => {
     expect(typeof factorialize(5)).toBe('number');
   });

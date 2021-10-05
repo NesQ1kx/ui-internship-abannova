@@ -1,6 +1,6 @@
-// import { reverseString } from './reverse-string';
+import { reverseString } from './reverse-string';
 
-describe.skip('reverseString', () => {
+describe('reverseString', () => {
   it('reverseString("hello") should return a string', () => {
     expect(typeof reverseString('hello')).toBe('string');
   });

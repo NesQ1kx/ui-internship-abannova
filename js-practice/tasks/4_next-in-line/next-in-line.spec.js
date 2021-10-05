@@ -1,6 +1,6 @@
-// import { nextInLine } from './next-in-line';
+import { nextInLine } from './next-in-line';
 
-describe.skip('nextInLine', () => {
+describe('nextInLine', () => {
   it('nextInLine([], 1) should return 1', () => {
     expect(nextInLine([], 1)).toBe(1);
   });
