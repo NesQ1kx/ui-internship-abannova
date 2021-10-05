@@ -1,0 +1,16 @@
+{
+  "name": "css-practice",
+  "version": "1.0.0",
+  "description": "Goal of the project is to provide the platform to get markup knowledge",
+  "scripts": {
+    "watch:sass": "node-sass -w task/scss/ -o task/css/",
+    "compile:sass": "node-sass task/scss/ -o task/css/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {}
+}
