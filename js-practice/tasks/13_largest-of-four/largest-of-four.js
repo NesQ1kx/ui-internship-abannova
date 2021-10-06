@@ -1,1 +1,1 @@
-export const largestOfFour = (arr) => arr.map((elem) => elem.reduce((prev, cur) => (cur > prev ? cur : prev)));
+export const largestOfFour = (arr) => arr.map((elem) => Math.max(...elem));
