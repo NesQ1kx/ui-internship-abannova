@@ -1,6 +1,6 @@
-// import { vowelCount } from './vowel-count';
+import { vowelCount } from './vowel-count';
 
-describe.skip('vowelCount', () => {
+describe('vowelCount', () => {
   it('vowelCount("abracadabra") should return 5', () => {
     expect(vowelCount('abracadabra')).toBe(5);
   });

@@ -1,6 +1,6 @@
-// import { peopleInBus } from './people-in-bus';
+import { peopleInBus } from './people-in-bus';
 
-describe.skip('peopleInBus', () => {
+describe('peopleInBus', () => {
   it('peopleInBus([[10, 0], [3, 5], [5, 8]]) should return 5', () => {
     expect(
       peopleInBus([

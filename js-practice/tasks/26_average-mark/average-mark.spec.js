@@ -1,6 +1,6 @@
-// import { averageMark } from './average-mark';
+import { averageMark } from './average-mark';
 
-describe.skip('averageMark', () => {
+describe('averageMark', () => {
   it('averageMark([2, 2, 2, 2]) should return 2', () => {
     expect(averageMark([2, 2, 2, 2])).toBe(2);
   });

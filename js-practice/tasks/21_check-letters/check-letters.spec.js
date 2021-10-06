@@ -1,6 +1,6 @@
-// import { checkLetters } from './check-letters';
+import { checkLetters } from './check-letters';
 
-describe.skip('checkLetters', () => {
+describe('checkLetters', () => {
   it('checkLetters(["hello", "hey"]) should return false', () => {
     expect(checkLetters(['hello', 'hey'])).toBe(false);
   });
