@@ -1,6 +1,6 @@
-// import { arrayChunks} from './array-chunks';
+import { arrayChunks } from './array-chunks';
 
-describe.skip('arrayChunks', () => {
+describe('arrayChunks', () => {
   it('arrayChunks(["a", "b", "c", "d"], 2) should return [["a", "b"], ["c", "d"]]', () => {
     expect(arrayChunks(['a', 'b', 'c', 'd'], 2)).toEqual([
       ['a', 'b'],

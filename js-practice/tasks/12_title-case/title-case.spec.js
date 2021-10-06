@@ -1,6 +1,6 @@
-// import { titleCase } from './title-case';
+import { titleCase } from './title-case';
 
-describe.skip('titleCase', () => {
+describe('titleCase', () => {
   it('titleCase("I\'m a little tea pot") should return a string', () => {
     expect(typeof titleCase("I'm a little tea pot")).toBe('string');
   });

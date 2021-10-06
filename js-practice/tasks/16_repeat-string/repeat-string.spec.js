@@ -1,6 +1,6 @@
-// import { repeatString } from './repeat-string';
+import { repeatString } from './repeat-string';
 
-describe.skip('repeatString', () => {
+describe('repeatString', () => {
   it('repeatString("*", 3) should return "***"', () => {
     expect(repeatString('*', 3)).toBe('***');
   });

@@ -1,6 +1,6 @@
-// import { humanizeFormat} from './humanize-format';
+import { humanizeFormat } from './humanize-format';
 
-describe.skip('humanizeFormat', () => {
+describe('humanizeFormat', () => {
   it('humanizeFormat() should return an empty string', () => {
     expect(humanizeFormat()).toBe('');
   });
