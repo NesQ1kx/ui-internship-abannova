@@ -1,6 +1,6 @@
-// import { isBoolean } from './is-boolean';
+import { isBoolean } from './is-boolean';
 
-describe.skip('isBoolean', () => {
+describe('isBoolean', () => {
   it('isBoolean(true) should return true', () => {
     expect(isBoolean(true)).toBe(true);
   });

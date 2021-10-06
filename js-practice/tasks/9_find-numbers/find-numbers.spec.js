@@ -1,6 +1,6 @@
-// import { findNumbers } from './find-numbers';
+import { findNumbers } from './find-numbers';
 
-describe.skip('findNumbers', () => {
+describe('findNumbers', () => {
   it('findNumbers("There are 3 cats but 4 dogs.") should return [3, 4]', () => {
     expect(findNumbers('There are 3 cats but 4 dogs.')).toEqual([3, 4]);
   });
