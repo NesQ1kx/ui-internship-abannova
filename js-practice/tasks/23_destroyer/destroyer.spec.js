@@ -1,6 +1,6 @@
-// import { destroyer } from './destroyer';
+import { destroyer } from './destroyer';
 
-describe.skip('destroyer', () => {
+describe('destroyer', () => {
   it('destroyer([1, 2, 3, 1, 2, 3], 2, 3) should return [1, 1]', () => {
     expect(destroyer([1, 2, 3, 1, 2, 3], 2, 3)).toEqual([1, 1]);
   });

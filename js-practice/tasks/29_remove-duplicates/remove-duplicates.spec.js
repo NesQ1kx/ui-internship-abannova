@@ -1,6 +1,6 @@
-// import { removeDuplicates } from './remove-duplicates';
+import { removeDuplicates } from './remove-duplicates';
 
-describe.skip('removeDuplicates', () => {
+describe('removeDuplicates', () => {
   it('removeDuplicates([1]) should return [1]', () => {
     expect(removeDuplicates([1])).toEqual([1]);
   });
