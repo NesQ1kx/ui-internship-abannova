@@ -1,6 +1,6 @@
-// import { minNumberToPrime } from './min-number-to-prime';
+import { minNumberToPrime } from './min-number-to-prime';
 
-describe.skip('minNumberToPrime', () => {
+describe('minNumberToPrime', () => {
   it('minNumberToPrime([3, 1, 2]) should return 1', () => {
     expect(minNumberToPrime([3, 1, 2])).toBe(1);
   });

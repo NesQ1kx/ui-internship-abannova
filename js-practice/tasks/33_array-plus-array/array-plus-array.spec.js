@@ -1,6 +1,6 @@
-// import { arrayPlusArray } from './array-plus-array';
+import { arrayPlusArray } from './array-plus-array';
 
-describe.skip('arrayPlusArray', () => {
+describe('arrayPlusArray', () => {
   it('arrayPlusArray([1, 1, 1], [2, 2, 2]) should return [3, 3, 3]', () => {
     expect(arrayPlusArray([1, 1, 1], [2, 2, 2])).toEqual([3, 3, 3]);
   });
