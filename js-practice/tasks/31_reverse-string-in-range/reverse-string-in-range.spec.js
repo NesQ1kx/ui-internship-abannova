@@ -1,6 +1,6 @@
-// import { reverseStringInRange } from './reverse-string-in-range';
+import { reverseStringInRange } from './reverse-string-in-range';
 
-describe.skip('reverseStringInRange', () => {
+describe('reverseStringInRange', () => {
   it('reverseStringInRange("codewars", [1, 5]) should return "cawedors"', () => {
     expect(reverseStringInRange('codewars', [1, 5])).toBe('cawedors');
   });

@@ -1,6 +1,6 @@
-// import { rowWeights } from './row-weight';
+import { rowWeights } from './row-weight';
 
-describe.skip('rowWeights', () => {
+describe('rowWeights', () => {
   it('rowWeights([13, 27, 49]) should  return [62, 27]', () => {
     expect(rowWeights([13, 27, 49])).toEqual([62, 27]);
   });

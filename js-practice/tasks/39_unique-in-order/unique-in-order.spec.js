@@ -1,6 +1,6 @@
-// import { uniqueInOrder } from './unique-in-order';
+import { uniqueInOrder } from './unique-in-order';
 
-describe.skip('uniqueInOrder', () => {
+describe('uniqueInOrder', () => {
   it('uniqueInOrder("AAAABBBCCDAABBB") should return ["A", "B", "C", "D", "A", "B"]', () => {
     expect(uniqueInOrder('AAAABBBCCDAABBB')).toEqual(['A', 'B', 'C', 'D', 'A', 'B']);
   });

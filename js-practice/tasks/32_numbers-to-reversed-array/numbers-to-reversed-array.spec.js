@@ -1,6 +1,6 @@
-// import { numbersToReversedArray } from './numbers-to-reversed-array';
+import { numbersToReversedArray } from './numbers-to-reversed-array';
 
-describe.skip('numbersToReversedArray', () => {
+describe('numbersToReversedArray', () => {
   it('numbersToReversedArray(348597) should return [7, 9, 5, 8, 4, 3]', () => {
     expect(numbersToReversedArray(348597)).toEqual([7, 9, 5, 8, 4, 3]);
   });

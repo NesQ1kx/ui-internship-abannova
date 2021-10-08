@@ -1,6 +1,6 @@
-// import { arrayLeaders } from './array-leaders';
+import { arrayLeaders } from './array-leaders';
 
-describe.skip('arrayLeaders', () => {
+describe('arrayLeaders', () => {
   it('arrayLeaders([1, 2, 3, 4, 0]) should return return [4]', () => {
     expect(arrayLeaders([1, 2, 3, 4, 0])).toEqual([4]);
   });
