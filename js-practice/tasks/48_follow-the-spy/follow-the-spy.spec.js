@@ -1,6 +1,6 @@
-// import { followTheSpy } from './follow-the-spy';
+import { followTheSpy } from './follow-the-spy';
 
-describe.skip('followTheSpy', () => {
+describe('followTheSpy', () => {
   it('followTheSpy([["USA", "BRA"], ["JPN", "PHL"], ["UAE", "JPN"], ["BRA", "UAE"]]) should return a string', () => {
     expect(
       typeof followTheSpy([

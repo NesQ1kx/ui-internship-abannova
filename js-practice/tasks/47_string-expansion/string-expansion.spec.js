@@ -1,6 +1,6 @@
-// import { stringExpansion } from './string-expansion';
+import { stringExpansion } from './string-expansion';
 
-describe.skip('stringExpansion', () => {
+describe('stringExpansion', () => {
   it('stringExpansion("3D2a5d2f") should return "DDDaadddddff"', () => {
     expect(stringExpansion('3D2a5d2f')).toBe('DDDaadddddff');
   });

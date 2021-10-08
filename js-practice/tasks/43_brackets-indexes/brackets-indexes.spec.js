@@ -1,6 +1,6 @@
-// import { bracketsIndexes } from './brackets-indexes';
+import { bracketsIndexes } from './brackets-indexes';
 
-describe.skip('bracketsIndexes', () => {
+describe('bracketsIndexes', () => {
   it('should return correct values', () => {
     expect(bracketsIndexes('((1)23(45))(aB)', 1)).toBe(3);
     expect(bracketsIndexes('((1)23(45))(aB)', 2)).toBe(-1);

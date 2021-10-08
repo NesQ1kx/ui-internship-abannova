@@ -1,6 +1,6 @@
-// import { runningAverage } from './running-average';
+import { runningAverage } from './running-average';
 
-describe.skip('runningAverage', () => {
+describe('runningAverage', () => {
   const rAvg = runningAverage();
 
   it('should return a function', () => {

@@ -1,6 +1,6 @@
-// import { catAndDogYears } from './cat-and-dog-years';
+import { catAndDogYears } from './cat-and-dog-years';
 
-describe.skip('catAndDogYears', () => {
+describe('catAndDogYears', () => {
   it('catAndDogYears(1) should return [1, 15, 15]', () => {
     expect(JSON.stringify(catAndDogYears(1))).toBe('[1,15,15]');
   });
