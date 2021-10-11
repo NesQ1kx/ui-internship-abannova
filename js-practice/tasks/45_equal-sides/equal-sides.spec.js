@@ -1,6 +1,6 @@
-// import { equalSides } from './equal-sides';
+import { equalSides } from './equal-sides';
 
-describe.skip('equalSides', () => {
+describe('equalSides', () => {
   it('equalSides([1, 2, 3, 4, 3, 2, 1]) should return 3', () => {
     expect(equalSides([1, 2, 3, 4, 3, 2, 1])).toBe(3);
   });

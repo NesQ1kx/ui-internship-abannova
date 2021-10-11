@@ -1,6 +1,6 @@
-// import { TimeSimulation } from './time-simulation';
+import { TimeSimulation } from './time-simulation';
 
-describe.skip('TimeSimulation', () => {
+describe('TimeSimulation', () => {
   const sim = new TimeSimulation();
 
   it('time should be counted from zero', () => {
