@@ -1,6 +1,6 @@
-// import { missedLetters } from './missed-letters';
+import { missedLetters } from './missed-letters';
 
-describe.skip('missedLetters', () => {
+describe('missedLetters', () => {
   it('missedLetters("abce") should return "d".', () => {
     expect(missedLetters('abce')).toBe('d');
   });

@@ -1,6 +1,6 @@
-// import { searchAndReplace } from './search-and-replace';
+import { searchAndReplace } from './search-and-replace';
 
-describe.skip('searchAndReplace', () => {
+describe('searchAndReplace', () => {
   it('searchAndReplace("Let us go to the store", "store", "mall") should return "Let us go to the mall"', () => {
     expect(searchAndReplace('Let us go to the store', 'store', 'mall')).toBe('Let us go to the mall');
   });
