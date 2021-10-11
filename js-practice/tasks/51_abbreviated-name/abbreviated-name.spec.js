@@ -1,6 +1,6 @@
-// import { abbreviatedName } from './abbreviated-name';
+import { abbreviatedName } from './abbreviated-name';
 
-describe.skip('abbreviatedName', () => {
+describe('abbreviatedName', () => {
   it('abbreviatedName("Verbovyi") should be a string', () => {
     expect(typeof abbreviatedName('Verbovyi')).toBe('string');
   });

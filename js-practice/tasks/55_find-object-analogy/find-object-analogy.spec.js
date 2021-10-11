@@ -1,6 +1,6 @@
-// import { findObjectAnalogy } from './find-object-analogy';
+import { findObjectAnalogy } from './find-object-analogy';
 
-describe.skip('findObjectAnalogy', () => {
+describe('findObjectAnalogy', () => {
   it('findObjectAnalogy([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" }) should return [{ first: "Tybalt", last: "Capulet" }]', () => {
     expect(
       JSON.stringify(

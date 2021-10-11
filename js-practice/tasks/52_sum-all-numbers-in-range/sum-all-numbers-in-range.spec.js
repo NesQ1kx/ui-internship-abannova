@@ -1,6 +1,6 @@
-// import { sumAllNumbersInRange } from './sum-all-numbers-in-range';
+import { sumAllNumbersInRange } from './sum-all-numbers-in-range';
 
-describe.skip('sumAllNumbersInRange', () => {
+describe('sumAllNumbersInRange', () => {
   it('sumAllNumbersInRange([1, 4]) should return a number', () => {
     expect(typeof sumAllNumbersInRange([1, 4])).toBe('number');
   });

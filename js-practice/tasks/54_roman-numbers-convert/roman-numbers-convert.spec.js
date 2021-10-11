@@ -1,6 +1,6 @@
-// import { romanNumbersConvert } from './roman-numbers-convert';
+import { romanNumbersConvert } from './roman-numbers-convert';
 
-describe.skip('romanNumbersConvert', () => {
+describe('romanNumbersConvert', () => {
   it('romanNumbersConvert(2) should return "II"', () => {
     expect(romanNumbersConvert(2)).toBe('II');
   });
