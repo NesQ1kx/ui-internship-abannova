@@ -1,6 +1,6 @@
-// import { rot13Encoder } from './rot13-encoder';
+import { rot13Encoder } from './rot13-encoder';
 
-describe.skip('rot13Encoder', () => {
+describe('rot13Encoder', () => {
   it('rot13Encoder("") should return a string', () => {
     expect(typeof rot13Encoder('')).toBe('string');
   });

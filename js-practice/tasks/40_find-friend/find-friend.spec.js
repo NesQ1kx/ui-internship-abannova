@@ -1,6 +1,6 @@
-// import { findFriend } from './find-friend';
+import { findFriend } from './find-friend';
 
-describe.skip('findFriend', () => {
+describe('findFriend', () => {
   it('findFriend(["blue", "blue", "red", "red", "blue", "green"]) should return 1', () => {
     expect(findFriend(['blue', 'blue', 'red', 'red', 'blue', 'green'])).toBe(1);
   });

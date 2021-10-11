@@ -1,6 +1,6 @@
-// import { randomFraction } from './random-fraction';
+import { randomFraction } from './random-fraction';
 
-describe.skip('randomFraction', () => {
+describe('randomFraction', () => {
   it('should return a number', () => {
     expect(typeof randomFraction()).toBe('number');
   });

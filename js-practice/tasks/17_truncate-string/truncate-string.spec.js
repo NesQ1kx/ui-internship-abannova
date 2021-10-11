@@ -1,9 +1,9 @@
-// import { truncateString } from './truncate-string';
+import { truncateString } from './truncate-string';
 
 const STRING0 = 'A-tisket a-tasket A green and yellow basket';
 const STRING1 = 'Peter Piper picked a peck of pickled peppers';
 
-describe.skip('truncateString', () => {
+describe('truncateString', () => {
   it(`truncateString("${STRING0}", 11) should return "A-tisket..."`, () => {
     expect(truncateString(STRING0, 11)).toBe('A-tisket...');
   });

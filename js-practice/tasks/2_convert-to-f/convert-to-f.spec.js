@@ -1,6 +1,6 @@
-// import { convertToF } from './convert-to-f';
+import { convertToF } from './convert-to-f';
 
-describe.skip('convertToF', () => {
+describe('convertToF', () => {
   it('should return a number', () => {
     expect(typeof convertToF(0)).toBe('number');
   });

@@ -1,6 +1,6 @@
-// import { cloneArr } from './clone-arr';
+import { cloneArr } from './clone-arr';
 
-describe.skip('cloneArr', () => {
+describe('cloneArr', () => {
   it('cloneArr([]) should return an array', () => {
     expect(Array.isArray(cloneArr([]))).toBe(true);
   });
