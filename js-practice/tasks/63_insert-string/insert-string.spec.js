@@ -1,6 +1,6 @@
-// import { insertString } from './insert-string';
+import { insertString } from './insert-string';
 
-describe.skip('insertString', () => {
+describe('insertString', () => {
   it('insertString("We are doing some exercises.") should return "We are doing some exercises"', () => {
     expect(insertString('We are doing some exercises.')).toBe('We are doing some exercises.');
   });
