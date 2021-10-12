@@ -1,6 +1,6 @@
-// import { sumOddFibonacci } from './sum-odd-fibonacci';
+import { sumOddFibonacci } from './sum-odd-fibonacci';
 
-describe.skip('sumOddFibonacci', () => {
+describe('sumOddFibonacci', () => {
   it('sumOddFibonacci(1) should return a number', () => {
     expect(typeof sumOddFibonacci(1)).toBe('number');
   });
