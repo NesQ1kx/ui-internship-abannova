@@ -1,6 +1,6 @@
-// import { checkForPalindromes } from './check-for-palindromes';
+import { checkForPalindromes } from './check-for-palindromes';
 
-describe.skip('checkForPalindromes', () => {
+describe('checkForPalindromes', () => {
   it('checkForPalindromes("eye") should return a boolean', () => {
     expect(typeof checkForPalindromes('eye')).toBe('boolean');
   });

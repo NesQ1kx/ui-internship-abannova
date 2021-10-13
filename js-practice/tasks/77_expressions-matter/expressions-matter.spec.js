@@ -1,6 +1,6 @@
-// import { expressionsMatter } from './expressions-matter';
+import { expressionsMatter } from './expressions-matter';
 
-describe.skip('expressionsMatter', () => {
+describe('expressionsMatter', () => {
   it('expressionsMatter(2, 1, 2) should return 6', () => {
     expect(expressionsMatter(2, 1, 2)).toBe(6);
   });

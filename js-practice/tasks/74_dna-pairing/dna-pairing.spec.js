@@ -1,6 +1,6 @@
-// import { DNAPairing } from './dna-pairing';
+import { DNAPairing } from './dna-pairing';
 
-describe.skip('DNAPairing', () => {
+describe('DNAPairing', () => {
   it('DNAPairing("ATCGA") should return [["A","T"],["T","A"],["C","G"],["G","C"],["A","T"]]', () => {
     expect(JSON.stringify(DNAPairing('ATCGA'))).toBe('[["A","T"],["T","A"],["C","G"],["G","C"],["A","T"]]');
   });

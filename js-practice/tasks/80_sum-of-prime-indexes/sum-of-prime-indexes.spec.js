@@ -1,6 +1,6 @@
-// import { sumOfPrimeIndexes } from './sum-of-prime-indexes';
+import { sumOfPrimeIndexes } from './sum-of-prime-indexes';
 
-describe.skip('sumOfPrimeIndexes', () => {
+describe('sumOfPrimeIndexes', () => {
   it('sumOfPrimeIndexes([]) should return 0', () => {
     expect(sumOfPrimeIndexes([])).toBe(0);
   });

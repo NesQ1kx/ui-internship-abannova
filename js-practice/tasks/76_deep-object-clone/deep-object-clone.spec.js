@@ -1,6 +1,6 @@
-// import { deepObjectClone } from './deep-object-clone';
+import { deepObjectClone } from './deep-object-clone';
 
-describe.skip('deepObjectClone', () => {
+describe('deepObjectClone', () => {
   it('deepObjectClone({}) should return an object', () => {
     expect(typeof deepObjectClone({})).toBe('object');
   });

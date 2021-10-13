@@ -1,6 +1,6 @@
-// import { calculatePrimorialOfANumber } from './calculate-primorial-of-a-number';
+import { calculatePrimorialOfANumber } from './calculate-primorial-of-a-number';
 
-describe.skip('calculatePrimorialOfANumber', () => {
+describe('calculatePrimorialOfANumber', () => {
   it('calculatePrimorialOfANumber(6) should return 30030', () => {
     expect(calculatePrimorialOfANumber(6)).toBe(30030);
   });
