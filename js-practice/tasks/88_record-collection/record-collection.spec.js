@@ -1,6 +1,6 @@
-// import { updateRecords } from './record-collection';
+import { updateRecords } from './record-collection';
 
-describe.skip('updateRecords', () => {
+describe('updateRecords', () => {
   it('after updateRecords(5439, "artist", "ABBA"), artist should be "ABBA"', () => {
     const collection = updateRecords(5439, 'artist', 'ABBA');
     expect(collection['5439'].artist).toBe('ABBA');

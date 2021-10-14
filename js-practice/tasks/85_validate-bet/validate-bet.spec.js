@@ -1,6 +1,6 @@
-// import { validateBet } from './validate-bet';
+import { validateBet } from './validate-bet';
 
-describe.skip('validateBet', () => {
+describe('validateBet', () => {
   it('validateBet "1 2 3 4 5" should return [1, 2, 3, 4, 5]', () => {
     expect(validateBet([5, 90], '1 2 3 4 5').join(',')).toBe('1,2,3,4,5');
   });

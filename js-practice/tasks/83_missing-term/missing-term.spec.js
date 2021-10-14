@@ -1,6 +1,6 @@
-// import { missingTerm } from './missing-term';
+import { missingTerm } from './missing-term';
 
-describe.skip('missingTerm', () => {
+describe('missingTerm', () => {
   it('missingTerm([1, 3, 5, 9, 11]) should return 7', () => {
     expect(missingTerm([1, 3, 5, 9, 11])).toBe(7);
   });
