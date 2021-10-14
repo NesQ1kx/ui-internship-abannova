@@ -1,7 +1,7 @@
-// import { binaryEncode } from './binary-encode';
+import { binaryEncode } from './binary-encode';
 import { TEST_BLOCKS } from '../_test-data/test-blocks';
 
-describe.skip('binaryEncode', () => {
+describe('binaryEncode', () => {
   it('should return a string', () => {
     expect(typeof binaryEncode()).toBe('string');
   });

@@ -1,6 +1,6 @@
-// import { carrying } from './carrying';
+import { carrying } from './carrying';
 
-describe.skip('carrying', () => {
+describe('carrying', () => {
   it('carrying(2, 3) should return 5', () => {
     expect(carrying(2, 3)).toBe(5);
   });

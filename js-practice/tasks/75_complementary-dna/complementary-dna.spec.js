@@ -1,6 +1,6 @@
-// import { complementaryDNA } from './complementary-dna';
+import { complementaryDNA } from './complementary-dna';
 
-describe.skip('complementaryDNA', () => {
+describe('complementaryDNA', () => {
   it('complementaryDNA("ATTGC") should return "TAACG"', () => {
     expect(complementaryDNA('ATTGC')).toBe('TAACG');
   });
