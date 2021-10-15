@@ -1,6 +1,6 @@
-// import { Person } from './make-a-person';
+import { Person } from './make-a-person';
 
-describe.skip('Person', () => {
+describe('Person', () => {
   let bob;
 
   beforeAll(() => {

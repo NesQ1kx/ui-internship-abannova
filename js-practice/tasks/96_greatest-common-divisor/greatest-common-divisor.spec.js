@@ -1,6 +1,6 @@
-// import { greatestCommonDivisor } from './greatest-common-divisor';
+import { greatestCommonDivisor } from './greatest-common-divisor';
 
-describe.skip('greatest-common-divisor', () => {
+describe('greatest-common-divisor', () => {
   it('greatestCommonDivisor(36, 45) should return 9', () => {
     expect(greatestCommonDivisor(36, 45)).toBe(9);
   });

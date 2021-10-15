@@ -1,6 +1,6 @@
-// import { LinkedList } from './linked-list';
+import { LinkedList } from './linked-list';
 
-describe.skip('LinkedList', () => {
+describe('LinkedList', () => {
   let list;
 
   beforeEach(() => {
@@ -70,7 +70,7 @@ describe.skip('LinkedList', () => {
     expect(list.tail).toBeNull();
   });
 
-  describe.skip('insertAfter method', () => {
+  describe('insertAfter method', () => {
     const firstValue = 5;
     const secondValue = 10;
     const valueToInsert = 30;
@@ -100,7 +100,7 @@ describe.skip('LinkedList', () => {
     });
   });
 
-  describe.skip('removeItem method', () => {
+  describe('removeItem method', () => {
     const firstValue = 1;
     const existedValue = 2;
     const notExistedValue = 3;

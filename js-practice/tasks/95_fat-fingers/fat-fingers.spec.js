@@ -1,6 +1,6 @@
-// import { fatFingers } from './fat-fingers';
+import { fatFingers } from './fat-fingers';
 
-describe.skip('fatFingers', () => {
+describe('fatFingers', () => {
   it('fatFingers("The quick brown fox jumps over the lazy dog.") should return string.', () => {
     expect(typeof fatFingers('The quick brown fox jumps over the lazy dog.')).toBe('string');
   });

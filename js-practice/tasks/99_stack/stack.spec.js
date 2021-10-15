@@ -1,6 +1,6 @@
-// import { Stack } from './stack';
+import { Stack } from './stack';
 
-describe.skip('Stack', () => {
+describe('Stack', () => {
   let stack;
   const firstNodeValue = 5;
   const secondNodeValue = 6;
@@ -10,7 +10,7 @@ describe.skip('Stack', () => {
     stack = new Stack();
   });
 
-  describe.skip('push method', () => {
+  describe('push method', () => {
     it('should add nodes to empty stack', () => {
       stack.push(firstNodeValue);
 
@@ -25,7 +25,7 @@ describe.skip('Stack', () => {
     });
   });
 
-  describe.skip('size prop', () => {
+  describe('size prop', () => {
     it('should return 0 for empty stack', () => {
       expect(stack.size).toBe(0);
     });
@@ -39,7 +39,7 @@ describe.skip('Stack', () => {
     });
   });
 
-  describe.skip('pop method', () => {
+  describe('pop method', () => {
     it('should do nothing for empty list', () => {
       const lastSnapshotBeforePop = JSON.stringify(stack.last);
 
