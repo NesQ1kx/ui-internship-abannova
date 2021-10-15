@@ -1,6 +1,6 @@
-// import { validateUSTelephoneNumber } from './validate-us-telephone-number';
+import { validateUSTelephoneNumber } from './validate-us-telephone-number';
 
-describe.skip('validateUSTelephoneNumber', () => {
+describe('validateUSTelephoneNumber', () => {
   it('validateUSTelephoneNumber("555-555-5555") should return a boolean', () => {
     expect(typeof validateUSTelephoneNumber('555-555-5555')).toBe('boolean');
   });

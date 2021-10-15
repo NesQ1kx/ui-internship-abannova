@@ -1,6 +1,6 @@
-// import { addedCharacters } from './added-characters';
+import { addedCharacters } from './added-characters';
 
-describe.skip('addedCharacters', () => {
+describe('addedCharacters', () => {
   it('addedCharacters("aabbcc", "aacccbbcc") should return "c"', () => {
     expect(addedCharacters('aabbcc', 'aacccbbcc')).toBe('c');
   });

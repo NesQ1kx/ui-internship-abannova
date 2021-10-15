@@ -1,6 +1,6 @@
-// import { bouncingBalls } from './bouncing-balls';
+import { bouncingBalls } from './bouncing-balls';
 
-describe.skip('bouncingBalls', () => {
+describe('bouncingBalls', () => {
   it('bouncingBalls(3.0, 0.66, 1.5) should return 3', () => {
     expect(bouncingBalls(3.0, 0.66, 1.5)).toBe(3);
   });
