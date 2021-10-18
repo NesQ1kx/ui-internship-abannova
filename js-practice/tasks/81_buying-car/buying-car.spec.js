@@ -1,6 +1,6 @@
-// import { buyingCar } from './buying-car';
+import { buyingCar } from './buying-car';
 
-describe.skip('buyingCar', () => {
+describe('buyingCar', () => {
   it('buyingCar(2000, 8000, 1000, 1.5) should return [6, 766]', () => {
     const result = buyingCar(2000, 8000, 1000, 1.5);
 

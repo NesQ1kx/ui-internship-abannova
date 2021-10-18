@@ -1,6 +1,6 @@
-// import { swapCases } from './swap-cases';
+import { swapCases } from './swap-cases';
 
-describe.skip('swapCases', () => {
+describe('swapCases', () => {
   it('swapCases("Hello World") should return a value type a string', () => {
     expect(typeof swapCases('Hello World')).toBe('string');
   });

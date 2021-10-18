@@ -1,6 +1,6 @@
-// import { symmetricDifference } from './symmetric-difference';
+import { symmetricDifference } from './symmetric-difference';
 
-describe.skip('symmetricDifference', () => {
+describe('symmetricDifference', () => {
   it('symmetricDifference([1, 2, 3], [5, 2, 1, 4]) should return [3, 4, 5]', () => {
     expect(JSON.stringify(symmetricDifference([1, 2, 3], [5, 2, 1, 4]))).toBe(JSON.stringify([3, 4, 5]));
   });

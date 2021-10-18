@@ -1,6 +1,6 @@
-// import { leastCommonMultipleInRage } from './least-common-multiple-in-range';
+import { leastCommonMultipleInRage } from './least-common-multiple-in-range';
 
-describe.skip('leastCommonMultipleInRage', () => {
+describe('leastCommonMultipleInRage', () => {
   it('leastCommonMultipleInRage([1, 5]) should return a number', () => {
     expect(typeof leastCommonMultipleInRage([1, 5])).toBe('number');
   });

@@ -1,6 +1,6 @@
-// import { pigLatin } from './pig-latin';
+import { pigLatin } from './pig-latin';
 
-describe.skip('pigLatin', () => {
+describe('pigLatin', () => {
   it('pigLatin("california") should return "aliforniacay"', () => {
     expect(pigLatin('california')).toBe('aliforniacay');
   });

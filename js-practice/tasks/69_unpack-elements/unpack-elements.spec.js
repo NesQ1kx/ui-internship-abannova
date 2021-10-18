@@ -1,6 +1,6 @@
-// import { unpackElements } from './unpack-elements';
+import { unpackElements } from './unpack-elements';
 
-describe.skip('unpackElements', () => {
+describe('unpackElements', () => {
   it('unpackElements([[["a"]], [["b"]]]) should return ["a", "b"]', () => {
     expect(JSON.stringify(unpackElements([[['a']], [['b']]]))).toBe('["a","b"]');
   });

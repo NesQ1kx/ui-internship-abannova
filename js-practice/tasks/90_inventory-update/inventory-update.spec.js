@@ -1,6 +1,6 @@
-// import { updateInventory } from './inventory-update';
+import { updateInventory } from './inventory-update';
 
-describe.skip('updateInventory', () => {
+describe('updateInventory', () => {
   it('should return an array', () => {
     const currInv = [];
     const newInv = [];

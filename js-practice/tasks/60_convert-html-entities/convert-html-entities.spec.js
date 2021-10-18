@@ -1,6 +1,6 @@
-// import { convertHTMLEntities } from './convert-html-entities';
+import { convertHTMLEntities } from './convert-html-entities';
 
-describe.skip('convertHTMLEntities', () => {
+describe('convertHTMLEntities', () => {
   it('convertHTMLEntities("Dolce & Gabbana") should return "Dolce &amp; Gabbana"', () => {
     expect(convertHTMLEntities('Dolce & Gabbana')).toBe('Dolce &amp; Gabbana');
   });

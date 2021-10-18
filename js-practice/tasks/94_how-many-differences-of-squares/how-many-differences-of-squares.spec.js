@@ -1,6 +1,6 @@
-// import { squares } from './how-many-differences-of-squares';
+import { squares } from './how-many-differences-of-squares';
 
-describe.skip('How Many Differences of Squares?', () => {
+describe('How Many Differences of Squares?', () => {
   it('squares(4) should return 3;', () => {
     expect(squares(4)).toBe(3);
   });

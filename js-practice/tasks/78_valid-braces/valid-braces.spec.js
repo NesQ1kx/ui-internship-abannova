@@ -1,6 +1,6 @@
-// import { validBraces } from './valid-braces';
+import { validBraces } from './valid-braces';
 
-describe.skip('validBraces', () => {
+describe('validBraces', () => {
   it('validBraces("(){}[]") should return true', () => {
     expect(validBraces('(){}[]')).toBe(true);
   });

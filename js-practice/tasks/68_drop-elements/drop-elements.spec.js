@@ -1,6 +1,6 @@
-// import { dropElements } from './drop-elements';
+import { dropElements } from './drop-elements';
 
-describe.skip('dropElements', () => {
+describe('dropElements', () => {
   it('dropElements([1, 2, 3, 4], function(n) {return n >= 3;}) should return [3, 4]', () => {
     expect(JSON.stringify(dropElements([1, 2, 3, 4], (n) => n >= 3))).toBe('[3,4]');
   });
