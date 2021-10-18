@@ -1,6 +1,6 @@
-// import { pairwise } from './pairwise';
+import { pairwise } from './pairwise';
 
-describe.skip('pairwise', () => {
+describe('pairwise', () => {
   it('pairwise([1, 4, 2, 3, 0, 5], 7) should return 11', () => {
     expect(pairwise([1, 4, 2, 3, 0, 5], 7)).toBe(11);
   });

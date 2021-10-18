@@ -1,6 +1,6 @@
-// import { calculateOrbitalPeriod } from './calculate-orbital-period';
+import { calculateOrbitalPeriod } from './calculate-orbital-period';
 
-describe.skip('calculateOrbitalPeriod', () => {
+describe('calculateOrbitalPeriod', () => {
   it('calculateOrbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]) should return [{name: "sputnik", orbitalPeriod: 86400}]', () => {
     expect(JSON.stringify(calculateOrbitalPeriod([{ name: 'sputnik', avgAlt: 35873.5553 }]))).toBe(
       JSON.stringify([{ name: 'sputnik', orbitalPeriod: 86400 }])
