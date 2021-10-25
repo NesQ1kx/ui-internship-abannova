@@ -1,0 +1,37 @@
+@import "colors";
+@import "mixins";
+
+$desktopLogoSize: 56px;
+$tabletLogoSize: 37px;
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__image {
+    background: no-repeat url("../images/Logo.png") center;
+    background-size: contain;
+    width: $desktopLogoSize;
+    height: $desktopLogoSize;
+    margin-right: 16px;
+
+    @include mediaTablet {
+      width: $tabletLogoSize;
+      height: $tabletLogoSize;
+      margin-right: 12px;
+    }
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.28em;
+
+    @include mediaMobileTablet {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}

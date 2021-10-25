@@ -1,0 +1,83 @@
+@import "colors";
+@import "mixins";
+
+.header {
+  background-color: $white;
+  &__topBar {
+    background: url("../images/TOPBAR 1.png") repeat-x;
+    height: 10px;
+  }
+
+  &__content {
+    padding: 16px 111px;
+    display: flex;
+    align-items: center;
+
+    @include mediaTablet {
+      padding: 16px 40px;
+    }
+
+    @include mediaMobile {
+      padding: 16px;
+    }
+  }
+
+  .logo {
+    margin-right: 90px;
+
+    @include mediaTablet {
+      margin-right: 4px;
+    }
+
+    &__title {
+      @include mediaMobile {
+        display: none;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 567px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.16em;
+    margin-left: auto;
+    margin-right: 41px;
+
+    @include mediaTablet {
+      font-size: 10px;
+      line-height: 13px;
+      max-width: 337px;
+      margin-right: 28px;
+    }
+
+    @include mediaMobile {
+      display: none;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+
+  .button {
+    @include mediaMobile {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @include mediaMobile {
+      display: block;
+      margin-left: auto;
+    }
+  }
+}
