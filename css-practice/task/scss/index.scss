@@ -11,7 +11,7 @@
 @import "footer";
 
 body {
-  font-family: DM Sans, serif;
+  font-family: 'DM Sans', serif;
   padding: 0;
   margin: 0;
 }
@@ -19,4 +19,8 @@ body {
 a {
   text-decoration: none;
   color: $black;
+}
+
+* {
+  box-sizing: border-box;
 }

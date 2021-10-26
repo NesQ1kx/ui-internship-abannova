@@ -4,11 +4,11 @@
 .social {
   display: flex;
   flex-direction: column;
-  padding: 100px 14px 100px 48px;
+  padding: 100px 42px;
   background: 78% 80% $purple no-repeat url("../images/squig2.png");
 
   @include mediaTablet {
-    padding: 100px 21px 100px 55px;
+    padding: 100px 55px;
     background-color: $purple;
     background-image: none;
   }
@@ -19,11 +19,7 @@
   }
 
   &__button {
-    margin: 40px auto 0;
-
-    @include mediaMobile {
-      margin: 40px auto;
-    }
+    margin: 60px auto 0;
   }
 
   &__title {
@@ -31,40 +27,35 @@
   }
 
   &__posts {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 34px;
+    grid-row-gap: 60px;
+    margin: 0 auto;
+
+    @include mediaTablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     @include mediaMobile {
-      flex-direction: column;
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 
   .post {
     text-decoration: none;
     color: $black;
-    margin-right: 34px;
-    margin-bottom: 60px;
-
-    @include mediaDesktop {
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-
-    @include mediaMobile {
-      margin-right: 0;
-    }
 
     &__img {
       display: block;
+      max-width: 312px;
+      max-height: 431px;
+      width: 100%;
     }
 
     &__name {
       margin-top: 30px;
-      width: 312px;
-      font-family: 'DM Sans', serif;
+      max-width: 312px;
       font-size: 26px;
       line-height: 34px;
       letter-spacing: 0.01em;
