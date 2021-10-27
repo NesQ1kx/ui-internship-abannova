@@ -1,0 +1,164 @@
+@import "mixins";
+@import "colors";
+
+.step {
+  display: flex;
+
+  @include mediaMobile {
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: 'DM Serif Text', serif;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 20px;
+
+    @include mediaTablet {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+
+    @include mediaTablet {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__image {
+    @include mediaMobile {
+      display: none;
+    }
+  }
+
+  &--one {
+    padding-left: 10%;
+    margin-top: 45px;
+
+    @include mediaTablet {
+      padding-left: 0;
+      margin-left: -40px;
+
+      .step__image {
+        width: 324px;
+        height: 311px;
+      }
+    }
+
+    @include mediaMobile {
+      padding: 415px 42px 52px;
+      margin-top: 56px;
+      background: center top no-repeat url("../images/step1-mobile.png");
+    }
+
+    .step__content {
+      margin-left: 40px;
+      margin-top: 60px;
+      width: 390px;
+
+      @include mediaTablet {
+        width: 310px;
+      }
+
+      @include mediaMobile {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+
+    .step__title {
+      @include mediaMobile {
+        width: 100%;
+      }
+    }
+  }
+
+  &--two {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 24%;
+
+    @include mediaMobile {
+      padding: 450px 42px 52px;
+      margin-top: 56px;
+      margin-left: 0;
+      background: center top no-repeat url("../images/step2-mobile.png");
+    }
+
+    .step__image {
+      @include mediaTablet {
+        width: 496px;
+        height: 333px;
+      }
+    }
+
+    .step__content {
+      margin-left: 90px;
+      margin-top: -40px;
+      width: 400px;
+
+      @include mediaTablet {
+        width: 300px;
+      }
+
+      @include mediaMobile {
+        margin-left: 0;
+        margin-top: 40px;
+        width: 100%;
+      }
+    }
+  }
+
+  &--two &__title {
+    width: 240px;
+  }
+
+  &--three {
+    margin-top: 90px;
+    padding-left: 18%;
+
+    @include mediaTablet {
+      padding-left: 6%;
+
+      .step__image {
+        width: 335px;
+        height: 349px;
+      }
+    }
+
+    @include mediaMobile {
+      padding: 450px 42px 52px;
+      margin-top: 56px;
+      background: center top no-repeat url("../images/step3-mobile.png");
+    }
+
+    .step__content {
+      margin-top: 80px;
+      margin-left: -50px;
+      width: 450px;
+
+      @include mediaTablet {
+        width: 350px;
+      }
+
+      @include mediaMobile {
+        margin-top: 30px;
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+
+    .step__title {
+      @include mediaMobile {
+        width: 150px;
+      }
+    }
+  }
+}
+

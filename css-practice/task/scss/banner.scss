@@ -1,0 +1,60 @@
+@import "colors";
+@import "mixins";
+
+.banner {
+  height: 545px;
+  background: right bottom no-repeat url("../images/BOX.png"), $purple 94% 32% no-repeat url("../images/Marker.png");
+
+  @include mediaTablet {
+    height: 474px;
+    background: $purple right bottom no-repeat url("../images/box-tablet.png");
+  }
+
+  @include mediaMobile {
+    height: auto;
+    background: $purple right bottom no-repeat url("../images/box-tablet.png");
+    background-size: 538px 376px;
+    padding-bottom: 366px;
+  }
+
+  &__content {
+    padding: 105px 0 0 111px;
+    width: 470px;
+
+    @include mediaTablet {
+      width: 363px;
+      padding: 18px 0 0 40px;
+    }
+
+    @include mediaMobile {
+      padding: 44px;
+      width: auto;
+    }
+  }
+
+  &__title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 20px;
+
+    @include mediaTablet {
+      font-size: 42px;
+      line-height: 48px;
+      margin-bottom: 18px;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    margin-bottom: 30px;
+
+    @include mediaTablet {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 24px;
+    }
+  }
+}

@@ -1,0 +1,157 @@
+@import "colors";
+@import "mixins";
+
+$border: 2px solid rgba($lightGray, 0.3);
+
+@mixin footerFont {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.12em;
+
+  @include mediaMobile {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.footer {
+  background-color: rgba($lightPurple, 0.3);
+  margin: 14px;
+  border: $border;
+  border-radius: 4px;
+
+  &-link {
+    @include footerFont;
+  }
+
+  &__social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 197px;
+
+    @include mediaMobile {
+      display: none;
+    }
+  }
+
+  .icon {
+    display: inline-block;
+  }
+
+  &__header, &__main {
+    padding: 0 0 0 80px;
+
+    @include mediaMobile {
+      padding: 0 34px;
+    }
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    margin-bottom: 60px;
+    padding-top: 50px;
+
+    @include mediaTablet {
+      margin-bottom: 50px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mediaMobile {
+      padding-top: 40px;
+      margin-bottom: 36px;
+    }
+
+    .logo {
+      grid-column: 1/4;
+
+      @include mediaTablet {
+        grid-column: 1/2;
+      }
+    }
+  }
+
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include mediaMobileTablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mediaMobile {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .link-section {
+      display: flex;
+      flex-direction: column;
+
+      @include mediaTablet {
+        margin-bottom: 30px;
+      }
+
+      @include mediaMobile {
+        margin-left: 32px;
+        margin-bottom: 50px;
+      }
+
+      &__title {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 13px;
+
+        @include mediaMobile {
+          font-size: 16px;
+          line-height: 21px;
+        }
+      }
+
+      .footer-link {
+        margin-bottom: 8px;
+
+        @include mediaMobile {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    border-top: $border;
+    margin-top: 47px;
+    padding: 24px 72px 30px 62px;
+
+    @include mediaMobileTablet {
+      margin-top: 0;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    @include mediaMobile {
+      margin-top: 0;
+      padding: 20px 32px;
+    }
+
+    .footer-link:first-child {
+      margin-right: 36px;
+    }
+
+    .copyright {
+      @include footerFont;
+      display: none;
+
+      @include mediaMobileTablet {
+        width: 100%;
+        display: block;
+        margin-top: 15px;
+      }
+    }
+  }
+}

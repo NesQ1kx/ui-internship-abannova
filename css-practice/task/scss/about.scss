@@ -1,0 +1,25 @@
+@import "colors";
+@import "mixins";
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 52px 85px 136px 85px;
+
+  @include mediaMobileTablet {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__title {
+    background: center bottom no-repeat url("../images/underline2.png");
+
+    @include mediaTablet {
+      background: center bottom no-repeat url("../images/underline2-tablet.png");
+    }
+  }
+
+  .button {
+    margin: 70px auto 0;
+  }
+}

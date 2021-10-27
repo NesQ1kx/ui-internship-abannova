@@ -1,0 +1,129 @@
+@import "colors";
+@import "mixins";
+
+$planBorderColor: rgba(196, 196, 196, 0.3);
+
+.plan {
+  padding: 71px 85px;
+
+  @include mediaMobile {
+    padding: 70px 14px;
+  }
+
+  @include mediaTablet {
+    padding: 27px 47px;
+  }
+
+  &__title {
+    background: center bottom no-repeat url("../images/underline.png");
+
+    @include mediaTablet {
+      background: center bottom no-repeat url("../images/underline-tablet.png");
+    }
+  }
+
+  &__types {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;
+
+    @include mediaTablet {
+      margin-top: 30px;
+    }
+
+    @include mediaMobile {
+      flex-direction: column;
+    }
+  }
+
+  &__type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid $planBorderColor;
+    border-radius: 6px;
+    width: 575px;
+    height: 291px;
+
+    @include mediaTablet {
+      width: 305px;
+      height: 154px;
+    }
+
+    @include mediaMobile {
+      width: 100%;
+      height: 188px;
+    }
+
+    &:first-child {
+      background: center / cover url("../images/Mask-Group1.png");
+      margin-right: 12px;
+
+      @include mediaMobile {
+        margin-bottom: 19px;
+        margin-right: 0;
+      }
+    }
+
+    &:last-child {
+      background: center / cover url("../images/Mask-Group2.png");
+    }
+
+    &-title {
+      font-family: 'DM Serif Text', serif;
+      font-size: 36px;
+      line-height: 49px;
+
+      @include mediaTablet {
+        font-size: 20px;
+        line-height: 27px;
+      }
+
+      @include mediaMobile {
+        font-size: 30px;
+        line-height: 41px;
+      }
+    }
+
+    &-price {
+      font-size: 44px;
+      line-height: 57px;
+      letter-spacing: 0.12em;
+      margin-bottom: 20px;
+
+      @include mediaTablet {
+        font-size: 24px;
+        line-height: 31px;
+        margin-bottom: 6px;
+      }
+
+      @include mediaMobile {
+        font-size: 30px;
+        line-height: 39px;
+      }
+    }
+  }
+
+  &__description {
+    text-align: center;
+    margin-top: 43px;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+
+    @include mediaTablet {
+      margin-top: 22px;
+    }
+
+    @include mediaMobileTablet {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    @include mediaMobile {
+      text-align: left;
+      margin-top: 15px;
+    }
+  }
+}
