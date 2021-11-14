@@ -1,0 +1,63 @@
+@import "../../colors";
+
+$border: 1px solid $lightGray;
+
+.productCard {
+  position: relative;
+  background-color: $white;
+  box-shadow: 0 0 20px rgba($black, 0.1);
+
+  .img {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .title {
+    padding: 13px 0 13px 0;
+    color: $green;
+    border-bottom: $border;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .product_footer {
+    display: flex;
+
+    .price {
+      flex-grow: 1;
+      text-align: center;
+      padding: 11px 0;
+      font-size: 16px;
+      line-height: 22px;
+      color: $darkGray;
+    }
+
+    .favorite_wrapper, .price {
+      border-right: $border;
+    }
+
+    .favorite, .cartSvg {
+      margin: 10px 18px;
+      color: $gray;
+      cursor: pointer;
+    }
+
+    .inFavorites {
+      stroke: #f00;
+    }
+
+    .cartWrapper {
+      position: relative;
+
+      .counter {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+      }
+    }
+  }
+}

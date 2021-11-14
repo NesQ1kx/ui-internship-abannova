@@ -1,0 +1,51 @@
+@import "../../colors";
+
+.button {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  white-space: nowrap;
+  cursor: pointer;
+  width: fit-content;
+  text-align: center;
+
+  &_full {
+    width: 100%;
+  }
+
+  &_green {
+    background-color: $green;
+    padding: 12px 55px;
+  }
+
+  &_transparent {
+    border: 1px solid rgba($white, 0.5);
+  }
+
+  &_transparent, &_green {
+    color: $white;
+  }
+
+  &_transparent, &_transparent_green {
+    background-color: transparent;
+    padding: 10px 67px;
+  }
+
+  &_white {
+    background-color: $white;
+    padding: 10px 82px;
+  }
+
+  &_transparent_green {
+    border: 1px solid $green;
+  }
+
+  &_transparent_green, &_white {
+    color: $green;
+  }
+
+  &_green, &_white {
+    border: none;
+  }
+}

@@ -1,0 +1,112 @@
+.step {
+  display: flex; }
+  @media screen and (max-width: 767px) {
+    .step {
+      flex-direction: column; } }
+  .step__title {
+    font-family: 'DM Serif Text', serif;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      .step__title {
+        font-size: 32px;
+        line-height: 36px; } }
+  .step__description {
+    font-family: 'DM Sans', serif;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.01em; }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      .step__description {
+        font-size: 14px;
+        line-height: 18px; } }
+  @media screen and (max-width: 767px) {
+    .step__image {
+      display: none; } }
+  .step--one {
+    padding-left: 10%;
+    margin-top: 45px; }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      .step--one {
+        padding-left: 0;
+        margin-left: -40px; }
+        .step--one .step__image {
+          width: 324px;
+          height: 311px; } }
+    @media screen and (max-width: 767px) {
+      .step--one {
+        padding: 415px 42px 52px;
+        margin-top: 56px;
+        background: center top no-repeat url("../images/step1-mobile.png"); } }
+    .step--one .step__content {
+      margin-left: 40px;
+      margin-top: 60px;
+      width: 390px; }
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .step--one .step__content {
+          width: 310px; } }
+      @media screen and (max-width: 767px) {
+        .step--one .step__content {
+          width: 100%;
+          margin-left: 0; } }
+    @media screen and (max-width: 767px) {
+      .step--one .step__title {
+        width: 100%; } }
+  .step--two {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 24%; }
+    @media screen and (max-width: 767px) {
+      .step--two {
+        padding: 450px 42px 52px;
+        margin-top: 56px;
+        margin-left: 0;
+        background: center top no-repeat url("../images/step2-mobile.png"); } }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      .step--two .step__image {
+        width: 496px;
+        height: 333px; } }
+    .step--two .step__content {
+      margin-left: 90px;
+      margin-top: -40px;
+      width: 400px; }
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .step--two .step__content {
+          width: 300px; } }
+      @media screen and (max-width: 767px) {
+        .step--two .step__content {
+          margin-left: 0;
+          margin-top: 40px;
+          width: 100%; } }
+  .step--two .step__title {
+    width: 240px; }
+  .step--three {
+    margin-top: 90px;
+    padding-left: 18%; }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      .step--three {
+        padding-left: 6%; }
+        .step--three .step__image {
+          width: 335px;
+          height: 349px; } }
+    @media screen and (max-width: 767px) {
+      .step--three {
+        padding: 450px 42px 52px;
+        margin-top: 56px;
+        background: center top no-repeat url("../images/step3-mobile.png"); } }
+    .step--three .step__content {
+      margin-top: 80px;
+      margin-left: -50px;
+      width: 450px; }
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .step--three .step__content {
+          width: 350px; } }
+      @media screen and (max-width: 767px) {
+        .step--three .step__content {
+          margin-top: 30px;
+          margin-left: 0;
+          width: 100%; } }
+    @media screen and (max-width: 767px) {
+      .step--three .step__title {
+        width: 150px; } }

@@ -1,0 +1,15 @@
+@import "../../colors";
+
+.logo {
+  color: $white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: -2.5px;
+  font-size: 32px;
+  line-height: 39px;
+  cursor: pointer;
+
+  &_dark {
+    color: $darkGray;
+  }
+}
