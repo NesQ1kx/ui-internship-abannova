@@ -1,0 +1,42 @@
+@import "../../colors";
+
+.header {
+  background-color: $lightPurple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 70px 31px 77px;
+
+  &_transparent {
+    background-color: transparent;
+  }
+
+  &_icons {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.cart, .favorites {
+  height: 36px;
+  width: 36px;
+}
+
+.burger, .cart, .favorites {
+  cursor: pointer;
+}
+
+.burger_dark, .cart_dark, .favorites_dark {
+  color: $darkGray;
+}
+
+.actionWrapper {
+  position: relative;
+  padding: 0 10px;
+
+  .actionCounter {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

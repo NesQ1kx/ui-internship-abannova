@@ -1,0 +1,51 @@
+@import "../../colors";
+
+.footer {
+  background-color: $lightPurple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 55px 64px;
+
+  &_dark {
+    background-color: $darkGray;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+
+    .link {
+      color: rgba($white, 0.6);
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 1.5px;
+      text-decoration: none;
+      padding-left: 32px;
+
+      &_dark {
+        color: rgba($darkGray, 0.6);
+      }
+    }
+  }
+
+  .social_networks {
+    display: flex;
+
+    .social_network {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba($white, 0.15);
+      color: rgba($white, 0.7);
+      width: 26px;
+      height: 26px;
+      margin-left: 10px;
+
+      &_dark {
+        color: $gray;
+        border: 1px solid rgba($gray, 0.15);
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../colors";
+
+.shop {
+  background-color: $white;
+
+  .content {
+    display: grid;
+    grid-template-columns: 266px 1fr;
+    grid-column-gap: 70px;
+    padding: 50px 64px 80px 84px;
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 32px;
+    }
+  }
+}

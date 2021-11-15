@@ -1,0 +1,17 @@
+@import "../../colors";
+
+.posts {
+  background-color: $lightPurple;
+
+  .postsTop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .postsBottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    padding: 100px 64px;
+  }
+}

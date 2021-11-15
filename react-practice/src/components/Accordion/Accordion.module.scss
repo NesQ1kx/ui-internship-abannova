@@ -1,0 +1,39 @@
+@import "../../colors";
+
+.accordion {
+  border-bottom: 1px solid $lightGray;
+  font-size: 14px;
+  line-height: 22px;
+
+  .accordion_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    cursor: pointer;
+
+    .name {
+      color: $darkGray;
+      letter-spacing: 0.6px;
+    }
+
+    .chevron {
+      color: $gray;
+      width: 15px;
+      height: 10px;
+    }
+
+    .chevron:hover {
+      color: $green;
+    }
+
+    .rotate {
+      transform: rotate(180deg);
+    }
+  }
+
+  .accordion_content {
+    letter-spacing: -0.2px;
+    color: rgba($gray, 0.9);
+  }
+}

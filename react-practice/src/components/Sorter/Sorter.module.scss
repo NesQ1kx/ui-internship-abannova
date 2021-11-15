@@ -1,0 +1,33 @@
+@import "../../colors";
+
+.sorter {
+  display: flex;
+  margin-bottom: 32px;
+
+  .label {
+    color: $darkGray;
+    margin-right: 12px;
+  }
+
+  .toggle {
+    display: flex;
+    align-items: center;
+    color: $green;
+    margin-right: 6px;
+    cursor: pointer;
+  }
+
+  .label, .toggle {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .chevron {
+    color: $green;
+    margin-left: 6px;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+}

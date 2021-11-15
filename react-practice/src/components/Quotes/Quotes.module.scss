@@ -1,0 +1,31 @@
+@import "../../colors";
+
+.quotes {
+  background: no-repeat url("../../images/WPBakerySectionServices.png");
+  background-size: cover;
+  padding: 100px 0 100px 64px;
+
+  .quote_wrapper {
+    width: 560px;
+    background-color: rgba($darkGray, 0.98);
+    padding: 36px;
+
+      .quote {
+        color: $white;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: -0.01em;
+        padding-bottom: 20px;
+      }
+
+      .author {
+        color: $green;
+        font-size: 16.8px;
+        line-height: 22px;
+      }
+
+    .arrows {
+      text-align: right;
+    }
+  }
+}
