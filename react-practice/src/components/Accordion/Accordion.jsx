@@ -5,15 +5,15 @@ import {ReactComponent as ChevronSvg} from '../../images/chevron.svg';
 import classNames from "classnames";
 
 const Accordion = ({ name, content }) => {
-  const [state, setState] = useState(false);
+  const [opened, toggleState] = useState(false);
 
   return (
     <div className={styles.accordion}>
-      <div className={styles.accordion_header} onClick={() => setState(!state)}>
+      <div className={styles.accordion_header} onClick={() => toggleState(!opened)}>
         <div className={styles.name}>{ name }</div>
-        <ChevronSvg className={classNames({[styles.chevron]: true, [styles.rotate]: state})} />
+        <ChevronSvg className={classNames({[styles.chevron]: true, [styles.rotate]: opened})} />
       </div>
-      {state && <div className={styles.accordion_content}>
+      {opened && <div className={styles.accordion_content}>
         { content }
       </div>}
     </div>

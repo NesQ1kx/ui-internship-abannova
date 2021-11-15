@@ -6,7 +6,6 @@ import FilterTitle from "../FilterTitle/FilterTitle";
 
 const Filter = ({ name, options, selectedOptionIds, onChange }) => {
   const toggleAll = (newChecked) => {
-    console.log(newChecked);
     if (newChecked) {
       onChange(options.map(({id}) => id));
     } else {
